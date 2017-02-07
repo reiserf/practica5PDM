@@ -20,7 +20,7 @@ public class AsigVerActivity extends AppCompatActivity {
 
 
     private ListView myListView;
-     ArrayList<Asignatura> lista = new ArrayList<>();
+    ArrayList<Asignatura> lista = new ArrayList<>();
     int flag;
 
 
@@ -58,28 +58,27 @@ public class AsigVerActivity extends AppCompatActivity {
 
     }
 
-    public void boton(){
+    public void boton() {
 
-        if(flag==1) {
-                    myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                        @Override
-                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        if (flag == 1) {
+            myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                @Override
+                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
 
-                            int codasig = lista.get(position).getCodAsig();
+                    int codasig = lista.get(position).getCodAsig();
 
-                            MainActivity.datos.eliminarAsignatura(codasig, true);
-                            Intent myintent = new Intent(getApplicationContext(), AsigVerActivity.class);
-                            myintent.putExtra("borrado",1);
-                            myintent.putExtra("codigo",getIntent().getIntExtra("codigo", 0));
-                            startActivityForResult(myintent, 31);
-                            finish();
-
-                        }
-                    });
-
+                    MainActivity.datos.eliminarAsignatura(codasig, true);
+                    Intent myintent = new Intent(getApplicationContext(), AsigVerActivity.class);
+                    myintent.putExtra("borrado", 1);
+                    myintent.putExtra("codigo", getIntent().getIntExtra("codigo", 0));
+                    startActivityForResult(myintent, 31);
+                    finish();
 
                 }
+            });
+
+        }
     }
 
 }
