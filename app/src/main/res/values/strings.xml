@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Ejercicio 2</string>
+
+
+    <!-- Botones Main Activity-->
+
+    <string name="btn_alta">Insercion</string>
+    <string name="btn_visualizacion">Visualizacion</string>
+    <string name="btn_borrado">Borrado</string>
+    <string name="btn_salir">Salir</string>
+
+
+    <string name="btn_editar">Editar</string>
+
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="btn_cancelar">Cancelar</string>
+
+
+    <!-- Textos -->
+    <string name="txtNombre">Nombre: </string>
+    <string name="txtEdad">Fecha de Nacimiento: </string>
+    <string name="tvEdad">Edad: </string>
+    <string name="noObjects">No hay datos</string>
+    <string name="txtMail" translatable="false">e-Mail: </string>
+    <string name="numValoraciones">Numero de valoraciones: </string>
+    <string name="txtMedia">La media de la aplicacion es: </string>
+    <string name="avisoNoDatos">Faltan datos por rellenar, por favor, rellene todos los campos.</string>
+    <string name="avisonuevo">Felicidades! Su registro finalizo con exito </string>
+    <string name="anterior">Anterior</string>
+    <string name="Siguiente">Siguiente</string>
+    <string name="rango">Te sales de rango</string>
+    <string name="datolista">Dato de la lista numero</string>
+
+    <string name="btnverhijos">Listar Asignaturas</string>
+    <string name="btninsertarhijo">Insertar Asignatura</string>
+    <string name="title_activity_alta_asig">AltaAsig</string>
+    <string name="desc">Descripcion: </string>
+    <string name="borrar">Borrar</string>
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alumno.myapplication.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/Sig"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnlistarH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="@string/btnverhijos" />
+
+        <Button
+            android:id="@+id/btninsertar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/btninsertarhijo" />
+
+    </LinearLayout>
+
+    <Button
+        android:text="@string/anterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="109dp"
+        android:id="@+id/Ant"
+        android:layout_marginLeft="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true" />
+
+    <Button
+        android:text="@string/Siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Sig"
+        android:layout_marginRight="36dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/Ant" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/id_foto"
+        android:id="@+id/id_foto"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listnombre"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nombre: "
+        android:layout_below="@+id/listcodigo"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listfecha"
+        android:layout_marginTop="20dp"
+        android:text="Fecha Nacimiento: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginStart="10dp"
+        android:layout_below="@+id/listnombre"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listcodigo"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Codigo: "
+        android:layout_below="@+id/id_foto"
+        android:layout_alignStart="@+id/listfecha"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"/>
+
+
+</RelativeLayout>

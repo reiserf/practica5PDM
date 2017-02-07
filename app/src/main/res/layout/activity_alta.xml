@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alumno.myapplication.MainActivity">
+
+
+    <!-- Nombre -->
+
+    <TextView
+        android:text="@string/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btn_aceptar"
+        android:layout_marginTop="26dp"
+        android:id="@+id/textView" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:id="@+id/etNombre" />
+
+
+    <!-- Edad -->
+
+    <TextView
+        android:text="@string/txtEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNombre"
+        android:layout_alignStart="@+id/etNombre"
+        android:id="@+id/textView2" />
+
+
+    <!-- Botones Cancelar - Aceptar -->
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/datePicker"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <ImageSwitcher
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgswitch"
+        android:layout_below="@+id/datePicker"
+        android:layout_centerHorizontal="true">
+
+    </ImageSwitcher>
+
+    <Button
+        android:text="@string/anterior"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/ant"
+        android:textSize="10dp"
+        android:layout_below="@+id/datePicker"
+        android:layout_alignEnd="@+id/btn_aceptar"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:text="@string/btn_aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_aceptar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="@string/Siguiente"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/sig"
+        android:textSize="10dp"
+        android:layout_alignBaseline="@+id/ant"
+        android:layout_alignBottom="@+id/ant"
+        android:layout_toEndOf="@+id/imgswitch" />
+
+    <Button
+        android:text="@string/btn_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_cancelar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
